@@ -56,6 +56,7 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python)
 ![Supabase](https://img.shields.io/badge/Supabase-181818?style=for-the-badge&logo=supabase)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
 ### 🧠 AI / ML
 Computer Vision (YOLOv8) • Edge AI • Vision Transformers (ViT) • ONNX Deployment  
@@ -69,7 +70,7 @@ LLM Integration • AI Chatbot Assistance • Intelligent Automation Systems
 AI-powered multi-view facial analysis engine designed for Asian skin tones.  
 Integrates Computer Vision, Vision Transformers and AI Assistants.
 
-### 🦐 ShrimpSense — Smart Farming AI
+### 🦐 [ShrimpSense — Smart Farming AI](https://github.com/Ohm5656/Frontend-P.IQ)
 AI system for shrimp size detection, behavior monitoring and automated farm management.  
 Combines Edge AI, IoT devices and automation workflows.
 
