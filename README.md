@@ -1,5 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0F6B3A&height=200&section=header&text=Natdanai%20Lunaha&fontSize=40&fontColor=ffffff"/>
-
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0F6B3A&height=220&section=header&text=Natdanai%20Lunaha&fontSize=45&fontColor=ffffff&animation=fadeIn"/>
 <h1 align="center">Hi 👋 I'm Natdanai (Ohm6566)</h1>
 <h3 align="center">🚀 AI Developer | Fullstack Builder | Tech Innovator</h3>
 
