@@ -1,14 +1,22 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0F6B3A&height=220&section=header&text=Natdanai%20Lunaha&fontSize=45&fontColor=ffffff&animation=fadeIn"/>
 
 <h1 align="center">Hi 👋 I'm Natdanai (Ohm5656)</h1>
-<h3 align="center">🚀 AI Developer | Fullstack Builder | Tech Innovator</h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&size=18&center=true&vCenter=true&width=850&lines=Building+real-world+AI+systems+across+Healthcare%2C+Smart+Farming%2C+FinTech+and+Social+Impact;Computer+Vision+%7C+Edge+AI+%7C+LLM+Assistants+%7C+Automation+Workflows"/>
+🚀 <b>AI Developer</b> • <b>Fullstack Builder</b> • <b>Tech Innovator</b>
 </p>
 
 <p align="center">
-  <a href="mailto:natdanailunaha@gmail.com"><img src="https://img.shields.io/badge/Email-natdanailunaha%40gmail.com-0F6B3A?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  <img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&size=18&center=true&vCenter=true&width=720&lines=Building+real-world+AI+systems+across+Healthcare%2C+Smart+Farming%2C+FinTech;Computer+Vision+%7C+Edge+AI+%7C+LLM+Assistants+%7C+Automation+Workflows"/>
+</p>
+
+<p align="center">
+  <a href="mailto:natdanailunaha@gmail.com">
+    <img src="https://img.shields.io/badge/Email-natdanailunaha%40gmail.com-0F6B3A?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Timezone-UTC%2B7-111827?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Focus-AI%20%26%20Fullstack-111827?style=for-the-badge"/>
 </p>
