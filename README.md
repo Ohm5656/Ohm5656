@@ -1,17 +1,24 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0F6B3A&height=220&section=header&text=Natdanai%20Lunaha&fontSize=45&fontColor=ffffff&animation=fadeIn"/>
-<h1 align="center">Hi 👋 I'm Natdanai (Ohm6566)</h1>
+
+<h1 align="center">Hi 👋 I'm Natdanai (Ohm5656)</h1>
 <h3 align="center">🚀 AI Developer | Fullstack Builder | Tech Innovator</h3>
 
 <p align="center">
-Building real-world AI systems across Healthcare, Smart Farming, FinTech and Social Impact Technology.
+  <img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&size=18&center=true&vCenter=true&width=850&lines=Building+real-world+AI+systems+across+Healthcare%2C+Smart+Farming%2C+FinTech+and+Social+Impact;Computer+Vision+%7C+Edge+AI+%7C+LLM+Assistants+%7C+Automation+Workflows"/>
+</p>
+
+<p align="center">
+  <a href="mailto:natdanailunaha@gmail.com"><img src="https://img.shields.io/badge/Email-natdanailunaha%40gmail.com-0F6B3A?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  <img src="https://img.shields.io/badge/Timezone-UTC%2B7-111827?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Focus-AI%20%26%20Fullstack-111827?style=for-the-badge"/>
 </p>
 
 ---
 
 ## 🧠 About Me
 
-🔥 Passionate about Artificial Intelligence, Fullstack Development and Real-world Innovation  
-⚡ Focused on building intelligent systems that combine AI + IoT + Automation  
+🔥 Passionate about **Artificial Intelligence**, **Fullstack Development**, and **Real-world Innovation**  
+⚡ Focused on building intelligent systems that combine **AI + IoT + Automation**  
 🌏 Creating technology that solves real problems for communities and industries
 
 ### 💡 Main Innovation Areas
@@ -44,31 +51,23 @@ LLM Integration • AI Chatbot Assistance • Intelligent Automation Systems
 
 ## 🚀 Featured Projects
 
-### 🤖 GlowbieBell — AI SkinCare Platform
+### 🤖 [GlowbieBell — AI SkinCare Platform](https://github.com/Ohm5656/Ai_ShinCare_Frontend)
 AI-powered multi-view facial analysis engine designed for Asian skin tones.  
 Integrates Computer Vision, Vision Transformers and AI Assistants.
-
----
 
 ### 🦐 ShrimpSense — Smart Farming AI
 AI system for shrimp size detection, behavior monitoring and automated farm management.  
 Combines Edge AI, IoT devices and automation workflows.
 
----
-
-### 💊 WarfarinCare — HealthTech Platform
+### 💊 [WarfarinCare — HealthTech Platform](https://github.com/Ohm5656/Warfarin-Care-frontend)
 Hospital-grade INR tracking and patient communication system powered by AI.  
 Designed to improve medication safety and healthcare workflow efficiency.
 
----
-
-### 💳 SubTrack — AI Subscription Tracker (LaunchLab Hackathon)
+### 💳 [SubTrack — AI Subscription Tracker (LaunchLab Hackathon)](https://github.com/Ohm5656/Launchl4b-Hackathon-frontend)
 Modern FinTech web app that scans Gmail receipts and invoices to automatically track subscriptions.  
 Built with intelligent automation and AI-assisted financial insights.
 
----
-
-### 📚 RWB E-Library — Digital School Library
+### 📚 [RWB E-Library — Digital School Library](https://github.com/Ohm5656/RWB-E-Library)
 A modern academic web-based library platform integrated with Google Apps Script.  
 Focused on improving accessibility and school digital transformation.
 
@@ -88,22 +87,22 @@ Focused on improving accessibility and school digital transformation.
 ## 📊 GitHub Stats
 
 <p align="center">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Ohm5656&theme=tokyonight"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Ohm5656&theme=tokyonight"/>
 </p>
 
 <p align="center">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Ohm5656&theme=tokyonight"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Ohm5656&theme=tokyonight&utcOffset=7"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Ohm5656&theme=tokyonight"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Ohm5656&theme=tokyonight&utcOffset=7"/>
 </p>
 
 <p align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Ohm5656&theme=tokyonight"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ohm5656&theme=tokyonight&hide_border=true"/>
 </p>
 
 ---
 
 ## 🌐 Let's Connect
 
-📧 natdanailunaha@gmail.com  
-
-✨ Building technology that creates real-world impact.
+- 📧 Email: natdanailunaha@gmail.com  
+- 🧠 Interests: AI • Computer Vision • Edge AI • Healthcare • Smart Farming • FinTech  
+- ✨ Motto: Building technology that creates real-world impact.
