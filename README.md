@@ -14,7 +14,7 @@
 
 <p align="center">
   <img
-    src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&size=16&center=true&vCenter=true&width=980&lines=Building+AI+Systems+for+Real-World+Impact;CV+%7C+Edge+AI+%7C+LLM+Assistants+%7C+Automation"
+    src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&size=16&center=true&vCenter=true&width=520&lines=CV+%E2%80%A2+Edge+AI+%E2%80%A2+LLM+Assistants+%E2%80%A2+Automation"
     alt="Typing"
   />
 </p>
