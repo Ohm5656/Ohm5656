@@ -21,14 +21,10 @@
 
 <p align="center">
   <a href="mailto:natdanailunaha@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Contact%20Me-0F6B3A?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+    <img src="https://img.shields.io/badge/Email-natdanailunaha%40gmail.com-0F6B3A?style=for-the-badge&logo=gmail&logoColor=white"/>
   </a>
-  <img src="https://img.shields.io/badge/Timezone-UTC%2B7-111827?style=for-the-badge" alt="Timezone"/>
-  <img src="https://img.shields.io/badge/Focus-AI%20%26%20Fullstack-111827?style=for-the-badge" alt="Focus"/>
-</p>
-
-<p align="center">
-  <sub>📧 natdanailunaha@gmail.com</sub>
+  <img src="https://img.shields.io/badge/Timezone-UTC%2B7-111827?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Focus-AI%20%26%20Fullstack-111827?style=for-the-badge"/>
 </p>
 
 ---
