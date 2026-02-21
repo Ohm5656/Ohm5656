@@ -78,7 +78,7 @@ Combines Edge AI, IoT devices and automation workflows.
 Hospital-grade INR tracking and patient communication system powered by AI.  
 Designed to improve medication safety and healthcare workflow efficiency.
 
-### 💳 [SubTrack — AI Subscription Tracker (LaunchLab Hackathon)](https://github.com/Ohm5656/Launchl4b-Hackathon-frontend)
+### 💳 [SubTrack — AI Subscription Tracker](https://github.com/Ohm5656/Launchl4b-Hackathon-frontend)
 Modern FinTech web app that scans Gmail receipts and invoices to automatically track subscriptions.  
 Built with intelligent automation and AI-assisted financial insights.
 
