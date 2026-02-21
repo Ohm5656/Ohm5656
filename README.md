@@ -1,24 +1,34 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0F6B3A&height=220&section=header&text=Natdanai%20Lunaha&fontSize=45&fontColor=ffffff&animation=fadeIn"/>
+<p align="center">
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&color=0F6B3A&height=220&section=header&text=Natdanai%20Lunaha&fontSize=45&fontColor=ffffff&animation=fadeIn"
+    alt="Natdanai Lunaha"
+    width="100%"
+  />
+</p>
 
 <h1 align="center">Hi 👋 I'm Natdanai (Ohm5656)</h1>
 
 <p align="center">
-🚀 <b>AI Developer</b> • <b>Fullstack Builder</b> • <b>Tech Innovator</b>
+  🚀 <b>AI Developer</b> • <b>Fullstack Builder</b> • <b>Tech Innovator</b>
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&size=18&center=true&vCenter=true&width=720&lines=Building+real-world+AI+systems+across+Healthcare%2C+Smart+Farming%2C+FinTech;Computer+Vision+%7C+Edge+AI+%7C+LLM+Assistants+%7C+Automation+Workflows"/>
+  <img
+    src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&size=16&center=true&vCenter=true&width=980&lines=Building+AI+Systems+for+Real-World+Impact;CV+%7C+Edge+AI+%7C+LLM+Assistants+%7C+Automation"
+    alt="Typing"
+  />
 </p>
 
 <p align="center">
   <a href="mailto:natdanailunaha@gmail.com">
-    <img src="https://img.shields.io/badge/Email-natdanailunaha%40gmail.com-0F6B3A?style=for-the-badge&logo=gmail&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Email-Contact%20Me-0F6B3A?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
+  <img src="https://img.shields.io/badge/Timezone-UTC%2B7-111827?style=for-the-badge" alt="Timezone"/>
+  <img src="https://img.shields.io/badge/Focus-AI%20%26%20Fullstack-111827?style=for-the-badge" alt="Focus"/>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Timezone-UTC%2B7-111827?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Focus-AI%20%26%20Fullstack-111827?style=for-the-badge"/>
+  <sub>📧 natdanailunaha@gmail.com</sub>
 </p>
 
 ---
@@ -30,11 +40,11 @@
 🌏 Creating technology that solves real problems for communities and industries
 
 ### 💡 Main Innovation Areas
-- 🤖 GlowbieBell — AI Skin Analysis Platform
-- 🦐 ShrimpSense — Smart Shrimp Farm AI System
-- 💊 WarfarinCare — HealthTech Web App
-- 💳 SubTrack — AI Subscription Tracker (FinTech)
-- 📚 RWB E-Library — Digital School Library
+- 🤖 GlowbieBell — AI Skin Analysis Platform  
+- 🦐 ShrimpSense — Smart Shrimp Farm AI System  
+- 💊 WarfarinCare — HealthTech Web App  
+- 💳 SubTrack — AI Subscription Tracker (FinTech)  
+- 📚 RWB E-Library — Digital School Library  
 
 ---
 
@@ -85,10 +95,10 @@ Focused on improving accessibility and school digital transformation.
 
 🚀 Building AI-powered platforms that combine:
 
-- Computer Vision Systems
-- Edge AI Deployment
-- LLM-based Intelligent Assistants
-- Real-world Automation Workflows
+- Computer Vision Systems  
+- Edge AI Deployment  
+- LLM-based Intelligent Assistants  
+- Real-world Automation Workflows  
 
 ---
 
