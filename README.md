@@ -6,7 +6,7 @@
   />
 </p>
 
-<h1 align="center">Hi 👋 I'm Natdanai (Ohm5656)</h1>
+<h1 align="center">Hi 👋 I'm Natdanai (Ohmmypopy)</h1>
 
 <p align="center">
   🚀 <b>AI Developer</b> • <b>Fullstack Builder</b> • <b>Tech Innovator</b>
