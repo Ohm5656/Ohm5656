@@ -89,11 +89,16 @@ Focused on improving accessibility and school digital transformation.
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Ohm5656&show_icons=true&theme=tokyonight&hide_border=true&cache_seconds=86400" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Ohm5656&theme=tokyonight"/>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ohm5656&theme=tokyonight&hide_border=true" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Ohm5656&theme=tokyonight"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Ohm5656&theme=tokyonight&utcOffset=7"/>
+</p>
+
+<p align="center">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Ohm5656&theme=tokyonight"/>
 </p>
 
 ---
