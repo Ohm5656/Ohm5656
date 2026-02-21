@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="https://capsule-render.vercel.app/api?type=waving&color=0F6B3A&height=220&section=header&text=Natdanai%20Lunaha&fontSize=45&fontColor=ffffff&animation=fadeIn"
+    src="https://capsule-render.vercel.app/api?type=waving&color=0F6B3A&height=220&section=header&text=Natdanai%20Lunaha&fontSize=45&fontColor=ffffff&animation=fadeIn&v=2"
     alt="Ohmmypopy"
     width="100%"
   />
