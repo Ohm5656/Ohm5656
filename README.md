@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="https://capsule-render.vercel.app/api?type=waving&color=0F172A&height=240&section=header&text=Ohmmypopy&fontSize=50&fontColor=E5E7EB&animation=fadeIn&textAlign=50&fontAlignY=40&desc=Ratwinit Bangkaeo School&descSize=18&descAlign=50"
+    src="https://capsule-render.vercel.app/api?type=waving&color=0F172A&height=240&section=header&text=Ohmmypopy&fontSize=50&fontColor=ffffff&animation=fadeIn&textAlign=50&fontAlignY=40&desc=THAILAND%20%7C%20SAMUT%20PRAKAN%20%7C%20RATWINIT%20BANGKAEO&descSize=18&descAlign=50"
     width="100%"
   />
 </p>
