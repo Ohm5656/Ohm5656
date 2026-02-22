@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="https://capsule-render.vercel.app/api?type=waving&color=0F6B3A&height=220&section=header&text=Ohmmypopy&fontSize=45&fontColor=ffffff&animation=fadeIn&v=2"
+    src="https://capsule-render.vercel.app/api?type=waving&color=0A2540&height=220&section=header&text=Ohmmypopy&fontSize=45&fontColor=ffffff&animation=fadeIn&v=2"
     alt="Ohmmypopy"
     width="100%"
   />
