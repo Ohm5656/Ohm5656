@@ -36,7 +36,6 @@
 
 ### 💡 Main Innovation Areas
 - 🤖 GlowbieBell — AI Skin Analysis Platform  
-- 🦐 ShrimpSense — Smart Shrimp Farm AI System  
 - 💊 WarfarinCare — HealthTech Web App  
 - 💳 SubTrack — AI Subscription Tracker (FinTech)  
 - 📚 RWB E-Library — Digital School Library  
@@ -69,9 +68,6 @@ LLM Integration • AI Chatbot Assistance • Intelligent Automation Systems
 AI-powered multi-view facial analysis engine designed for Asian skin tones.  
 Integrates Computer Vision, Vision Transformers and AI Assistants.
 
-### 🦐 [ShrimpSense — Smart Farming AI](https://github.com/Ohm5656/Frontend-P.IQ)
-AI system for shrimp size detection, behavior monitoring and automated farm management.  
-Combines Edge AI, IoT devices and automation workflows.
 
 ### 💊 [WarfarinCare — HealthTech Platform](https://github.com/Ohm5656/Warfarin-Care-frontend)
 Hospital-grade INR tracking and patient communication system powered by AI.  
