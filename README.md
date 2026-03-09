@@ -5,18 +5,6 @@
   />
 </p>
 
-<h1 align="center">Hi 👋 I'm Natdanai (Ohmmypopy)</h1>
-
-<p align="center">
-  🚀 <b>AI Developer</b> • <b>Fullstack Builder</b> • <b>Tech Innovator</b>
-</p>
-
-<p align="center">
-  <img
-    src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&size=16&center=true&vCenter=true&width=980&lines=Building+AI+Systems+for+Real-World+Impact;CV+%7C+Edge+AI+%7C+LLM+Assistants+%7C+Automation"
-    alt="Typing"
-  />
-</p>
 
 <p align="center">
   <a href="mailto:natdanailunaha@gmail.com">
@@ -26,21 +14,7 @@
   <img src="https://img.shields.io/badge/Focus-AI%20%26%20Fullstack-111827?style=for-the-badge"/>
 </p>
 
----
 
-## 🧠 About Me
-
-🔥 Passionate about **Artificial Intelligence**, **Fullstack Development**, and **Real-world Innovation**  
-⚡ Focused on building intelligent systems that combine **AI + IoT + Automation**  
-🌏 Creating technology that solves real problems for communities and industries
-
-### 💡 Main Innovation Areas
-- 🤖 GlowbieBell — AI Skin Analysis Platform  
-- 💊 WarfarinCare — HealthTech Web App  
-- 💳 SubTrack — AI Subscription Tracker (FinTech)  
-- 📚 RWB E-Library — Digital School Library  
-
----
 
 ## 🛠 Tech Stack
 
@@ -62,37 +36,6 @@ LLM Integration • AI Chatbot Assistance • Intelligent Automation Systems
 
 ---
 
-## 🚀 Featured Projects
-
-### 🤖 [GlowbieBell — AI SkinCare Platform](https://github.com/Ohm5656/Ai_ShinCare_Frontend)
-AI-powered multi-view facial analysis engine designed for Asian skin tones.  
-Integrates Computer Vision, Vision Transformers and AI Assistants.
-
-
-### 💊 [WarfarinCare — HealthTech Platform](https://github.com/Ohm5656/Warfarin-Care-frontend)
-Hospital-grade INR tracking and patient communication system powered by AI.  
-Designed to improve medication safety and healthcare workflow efficiency.
-
-### 💳 [SubTrack — AI Subscription Tracker](https://github.com/Ohm5656/Launchl4b-Hackathon-frontend)
-Modern FinTech web app that scans Gmail receipts and invoices to automatically track subscriptions.  
-Built with intelligent automation and AI-assisted financial insights.
-
-### 📚 [RWB E-Library — Digital School Library](https://github.com/Ohm5656/RWB-E-Library)
-A modern academic web-based library platform integrated with Google Apps Script.  
-Focused on improving accessibility and school digital transformation.
-
----
-
-## 🧬 Current Focus
-
-🚀 Building AI-powered platforms that combine:
-
-- Computer Vision Systems  
-- Edge AI Deployment  
-- LLM-based Intelligent Assistants  
-- Real-world Automation Workflows  
-
----
 
 ## 📊 GitHub Stats
 
