@@ -5,7 +5,6 @@
   />
 </p>
 
-
 <p align="center">
   <a href="mailto:natdanailunaha@gmail.com">
     <img src="https://img.shields.io/badge/Email-natdanailunaha%40gmail.com-0F6B3A?style=for-the-badge&logo=gmail&logoColor=white"/>
