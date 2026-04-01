@@ -17,25 +17,25 @@
 
 ## 🛠 Tech Stack
 
-### 🎨 Frontend
+###  Frontend
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
 ![NextJS](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript)
 
-### ⚙️ Backend
+###  Backend
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
-### 🧠 AI / ML
+###  AI / ML
 Computer Vision (YOLOv8) • Edge AI • Vision Transformers (ViT) • ONNX Deployment  
 LLM Integration • AI Chatbot Assistance • Intelligent Automation Systems
 
 ---
 
 
-## 📊 GitHub Stats
+##  GitHub Stats
 
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Ohm5656&theme=tokyonight"/>
@@ -52,8 +52,8 @@ LLM Integration • AI Chatbot Assistance • Intelligent Automation Systems
 
 ---
 
-## 🌐 Let's Connect
+##  Let's Connect
 
-- 📧 Email: natdanailunaha@gmail.com  
-- 🧠 Interests: AI • Computer Vision • Edge AI • Healthcare • Smart Farming • FinTech  
-- ✨ Motto: Building technology that creates real-world impact.
+-  Email: natdanailunaha@gmail.com  
+-  Interests: AI • Computer Vision • Edge AI • Healthcare • Smart Farming • FinTech  
+-  Motto: Building technology that creates real-world impact.
