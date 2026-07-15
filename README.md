@@ -34,7 +34,6 @@ LLM Integration • AI Chatbot Assistance • Intelligent Automation Systems
 
 ---
 
-### 🟢 Contribution Activity
 
 <p align="center">
   <img
