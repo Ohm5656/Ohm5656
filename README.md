@@ -35,19 +35,36 @@ LLM Integration • AI Chatbot Assistance • Intelligent Automation Systems
 ---
 
 
-##  GitHub Stats
+## 📊 GitHub Activity
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Ohm5656&theme=tokyonight"/>
+  <img
+    src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Ohm5656&theme=tokyonight"
+    width="100%"
+  />
+</p>
+
+### 🟢 Contribution Activity
+
+<p align="center">
+  <img
+    src="https://github-readme-activity-graph.vercel.app/graph?username=Ohm5656&bg_color=1a1b27&color=70a5fd&line=39d353&point=39d353&area_color=26a641&area=true&hide_border=true&custom_title=Contribution%20Activity"
+    width="100%"
+  />
 </p>
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Ohm5656&theme=tokyonight"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Ohm5656&theme=tokyonight&utcOffset=7"/>
+  <img
+    src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Ohm5656&theme=tokyonight"
+  />
 </p>
 
+### 🔥 Coding Streak
+
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ohm5656&theme=tokyonight&hide_border=true"/>
+  <img
+    src="https://streak-stats.demolab.com?user=Ohm5656&theme=tokyonight&hide_border=true"
+  />
 </p>
 
 ---
