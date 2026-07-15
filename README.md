@@ -34,16 +34,6 @@ LLM Integration • AI Chatbot Assistance • Intelligent Automation Systems
 
 ---
 
-
-## 📊 GitHub Activity
-
-<p align="center">
-  <img
-    src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Ohm5656&theme=tokyonight"
-    width="100%"
-  />
-</p>
-
 ### 🟢 Contribution Activity
 
 <p align="center">
@@ -53,19 +43,7 @@ LLM Integration • AI Chatbot Assistance • Intelligent Automation Systems
   />
 </p>
 
-<p align="center">
-  <img
-    src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Ohm5656&theme=tokyonight"
-  />
-</p>
 
-### 🔥 Coding Streak
-
-<p align="center">
-  <img
-    src="https://streak-stats.demolab.com?user=Ohm5656&theme=tokyonight&hide_border=true"
-  />
-</p>
 
 ---
 
