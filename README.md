@@ -50,9 +50,7 @@
 
 
 
----
 
-## 🌿 GitHub Activity Garden
 
 <p align="center">
   <a href="https://ohm5656.github.io/Ohm5656/">
@@ -64,12 +62,7 @@
   </a>
 </p>
 
-<p align="center">
-  <sub>🌱 Click the garden to explore my activity</sub>
-</p>
 
-
----
 
 ##  Let's Connect
 
