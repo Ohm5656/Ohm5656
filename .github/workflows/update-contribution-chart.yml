@@ -1,45 +1,49 @@
-name: Update Contribution Chart
+name: Update Activity Garden
 
 on:
   workflow_dispatch:
 
   schedule:
+    # 07:17 UTC = 14:17 Thailand
     - cron: "17 7 * * *"
-      timezone: "Asia/Bangkok"
 
 permissions:
   contents: write
 
 jobs:
-  update-chart:
+  update-garden:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v7
+        uses: actions/checkout@v4
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Generate contribution chart
+      - name: Install dependencies
+        run: pip install pillow
+
+      - name: Generate contribution garden
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: Ohm5656
         run: python scripts/generate_contributions.py
 
-      - name: Commit updated chart
+      - name: Commit updated garden
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add assets/yearly-contributions.svg
+          git add assets/contribution-meadow.gif
+          git add docs/contributions.json
 
           if git diff --cached --quiet; then
             echo "No changes"
             exit 0
           fi
 
-          git commit -m "chore: update contribution chart"
+          git commit -m "chore: update activity garden"
           git push
