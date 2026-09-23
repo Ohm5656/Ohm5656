@@ -55,9 +55,18 @@
 ## 🌿 GitHub Activity Garden
 
 <p align="center">
-  <img src="./assets/yearly-contributions.svg" width="100%" alt="GitHub Activity Garden" />
+  <a href="https://ohm5656.github.io/Ohm5656/">
+    <img
+      src="./assets/contribution-meadow.gif"
+      width="100%"
+      alt="GitHub Activity Garden"
+    />
+  </a>
 </p>
 
+<p align="center">
+  <sub>🌱 Click the garden to explore my activity</sub>
+</p>
 
 
 ---
