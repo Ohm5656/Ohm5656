@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0d1117" />
+  <meta name="description" content="Interactive GitHub contribution garden for Ohm5656" />
+  <title>Ohm's GitHub Activity Garden</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <main class="page">
+    <header class="header">
+      <div>
+        <p class="eyebrow">OHM5656</p>
+        <h1>GitHub Activity Garden</h1>
+      </div>
+
+      <div id="total" class="total">Loading…</div>
+    </header>
+
+    <section class="garden-card">
+      <div id="gardenWrap" class="garden-wrap">
+        <canvas
+          id="garden"
+          aria-label="Interactive GitHub contribution garden"
+          tabindex="0"
+        ></canvas>
+
+        <div id="tooltip" class="tooltip" hidden>
+          <strong id="tooltipDate"></strong>
+          <span id="tooltipCount"></span>
+        </div>
+      </div>
+
+      <div class="legend">
+        <span>Move across the grass</span>
+        <span>Taller grass = more activity</span>
+      </div>
+    </section>
+
+    <p class="footer">Every blade represents a day of building.</p>
+  </main>
+
+  <script src="./garden.js"></script>
+</body>
+</html>
