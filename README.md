@@ -41,8 +41,7 @@
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 ![ONNX](https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white)
 
-`Computer Vision` • `YOLOv8` • `Vision Transformers (ViT)` • `Edge AI` • `ONNX Deployment`  
-`LLM Integration` • `AI Chatbot` • `Intelligent Automation`
+
 
 ---
 
