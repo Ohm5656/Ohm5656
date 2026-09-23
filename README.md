@@ -52,12 +52,10 @@
 
 ---
 
+## 🌿 GitHub Activity Garden
 
 <p align="center">
-  <img src="https://img.shields.io/badge/01-FULL_STACK-0D1117?style=for-the-badge&labelColor=238636" />
-  <img src="https://img.shields.io/badge/02-AI_%2F_CV-0D1117?style=for-the-badge&labelColor=8957E5" />
-  <img src="https://img.shields.io/badge/03-GAME_DEV-0D1117?style=for-the-badge&labelColor=1F6FEB" />
-  <img src="https://img.shields.io/badge/04-ROBOTICS-0D1117?style=for-the-badge&labelColor=F85149" />
+  <img src="./assets/yearly-contributions.svg" width="100%" alt="GitHub Activity Garden" />
 </p>
 
 
