@@ -1,49 +1,34 @@
 import json
 import math
 import os
+import random
 import urllib.request
-from collections import OrderedDict
-from datetime import date, datetime, time, timezone
 from pathlib import Path
 
 
 USERNAME = os.getenv("GITHUB_USERNAME", "Ohm5656")
 TOKEN = os.environ["GH_TOKEN"]
 
+# ใช้ชื่อเดิม เพื่อไม่ต้องแก้ README / Workflow
 OUTPUT = Path("assets/yearly-contributions.svg")
 OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 
 
-def shift_month(year: int, month: int, offset: int) -> tuple[int, int]:
-    month_index = year * 12 + (month - 1) + offset
-    return month_index // 12, month_index % 12 + 1
-
-
-today = datetime.now(timezone.utc).date()
-
-# 12 เดือนปฏิทิน รวมเดือนปัจจุบัน
-start_year, start_month = shift_month(today.year, today.month, -11)
-start_date = date(start_year, start_month, 1)
-
-from_datetime = datetime.combine(
-    start_date,
-    time.min,
-    tzinfo=timezone.utc,
-).isoformat()
-
-to_datetime = datetime.now(timezone.utc).isoformat()
-
+# ─────────────────────────────────────
+# GitHub Contribution Data
+# ─────────────────────────────────────
 
 query = """
-query($login: String!, $from: DateTime!, $to: DateTime!) {
+query($login: String!) {
   user(login: $login) {
-    contributionsCollection(from: $from, to: $to) {
+    contributionsCollection {
       contributionCalendar {
         totalContributions
         weeks {
           contributionDays {
             date
             contributionCount
+            color
           }
         }
       }
@@ -52,16 +37,12 @@ query($login: String!, $from: DateTime!, $to: DateTime!) {
 }
 """
 
-
 payload = json.dumps({
     "query": query,
     "variables": {
-        "login": USERNAME,
-        "from": from_datetime,
-        "to": to_datetime,
-    },
+        "login": USERNAME
+    }
 }).encode("utf-8")
-
 
 request = urllib.request.Request(
     "https://api.github.com/graphql",
@@ -69,218 +50,303 @@ request = urllib.request.Request(
     headers={
         "Authorization": f"Bearer {TOKEN}",
         "Content-Type": "application/json",
-        "User-Agent": "github-contribution-chart",
+        "User-Agent": "github-contribution-meadow",
     },
 )
-
 
 with urllib.request.urlopen(request) as response:
     result = json.load(response)
 
-
 if "errors" in result:
     raise RuntimeError(result["errors"])
 
-
-calendar_data = (
-    result["data"]["user"]["contributionsCollection"]["contributionCalendar"]
+calendar = (
+    result["data"]["user"]["contributionsCollection"]
+    ["contributionCalendar"]
 )
 
+total = calendar["totalContributions"]
 
-# สร้าง 12 เดือน
-monthly = OrderedDict()
+days = []
 
-for offset in range(12):
-    year, month = shift_month(start_year, start_month, offset)
-    monthly[(year, month)] = 0
-
-
-# รวม contribution รายวัน → รายเดือน
-for week in calendar_data["weeks"]:
+for week in calendar["weeks"]:
     for day in week["contributionDays"]:
-        day_date = date.fromisoformat(day["date"])
-        key = (day_date.year, day_date.month)
+        days.append({
+            "date": day["date"],
+            "count": day["contributionCount"],
+            "color": day["color"],
+        })
 
-        if key in monthly:
-            monthly[key] += day["contributionCount"]
+days.sort(key=lambda d: d["date"])
+
+if not days:
+    raise RuntimeError("No contribution data returned")
 
 
-values = list(monthly.values())
+# ─────────────────────────────────────
+# SVG Settings
+# ─────────────────────────────────────
 
-month_names = [
-    "Jan", "Feb", "Mar", "Apr", "May", "Jun",
-    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+WIDTH = 1080
+HEIGHT = 330
+
+LEFT = 35
+RIGHT = 35
+
+GROUND_Y = 250
+MEADOW_WIDTH = WIDTH - LEFT - RIGHT
+
+max_count = max(day["count"] for day in days)
+max_count = max(max_count, 1)
+
+spacing = MEADOW_WIDTH / max(len(days) - 1, 1)
+
+
+# ─────────────────────────────────────
+# Generate Grass
+# ─────────────────────────────────────
+
+grass = []
+highlights = []
+
+for i, day in enumerate(days):
+    count = day["count"]
+    x = LEFT + i * spacing
+
+    # ใช้วันที่เป็น seed → รูปร่างหญ้าเดิมทุกครั้ง
+    rng = random.Random(day["date"])
+
+    if count == 0:
+        height = rng.uniform(3, 7)
+        color = "#21262d"
+        opacity = 0.45
+        blade_count = 1
+    else:
+        # log scale กันวันที่ commit เยอะมากจนหญ้าสูงเกิน
+        strength = math.log1p(count) / math.log1p(max_count)
+
+        height = 10 + strength * 75
+        color = day["color"]
+        opacity = 0.95
+
+        if count >= 8:
+            blade_count = 4
+        elif count >= 4:
+            blade_count = 3
+        elif count >= 2:
+            blade_count = 2
+        else:
+            blade_count = 1
+
+    for blade in range(blade_count):
+        offset = rng.uniform(-1.5, 1.5)
+        blade_height = height * rng.uniform(0.70, 1.05)
+        lean = rng.uniform(-2.8, 2.8)
+
+        x1 = x + offset
+        y1 = GROUND_Y
+        x2 = x1 + lean
+        y2 = GROUND_Y - blade_height
+
+        grass.append(
+            f'''
+            <line
+                x1="{x1:.2f}"
+                y1="{y1:.2f}"
+                x2="{x2:.2f}"
+                y2="{y2:.2f}"
+                stroke="{color}"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                opacity="{opacity}"
+            />
+            '''
+        )
+
+    # วันที่ activity สูงมาก ให้มี glow เล็กน้อย
+    if count > 0:
+        strength = math.log1p(count) / math.log1p(max_count)
+
+        if strength > 0.78:
+            highlights.append(
+                f'''
+                <circle
+                    cx="{x:.2f}"
+                    cy="{GROUND_Y - height - 4:.2f}"
+                    r="2"
+                    fill="{color}"
+                    opacity="0.8"
+                    filter="url(#glow)"
+                />
+                '''
+            )
+
+
+# ─────────────────────────────────────
+# Month Labels
+# ─────────────────────────────────────
+
+months = []
+seen_months = set()
+
+MONTH_NAMES = [
+    "Jan", "Feb", "Mar", "Apr",
+    "May", "Jun", "Jul", "Aug",
+    "Sep", "Oct", "Nov", "Dec"
 ]
 
-labels = [
-    month_names[month - 1]
-    for year, month in monthly.keys()
-]
+for i, day in enumerate(days):
+    year, month, date = map(int, day["date"].split("-"))
+    key = (year, month)
 
-total = sum(values)
+    if key not in seen_months:
+        seen_months.add(key)
 
-# SVG dimensions
-width = 1058
-height = 400
+        x = LEFT + i * spacing
 
-left = 75
-right = 45
-top = 85
-bottom = 70
-
-chart_width = width - left - right
-chart_height = height - top - bottom
-
-max_value = max(values) if values else 1
-
-# ปรับแกน Y ให้เป็นเลขสวย
-step = max(10, math.ceil(max_value / 4 / 10) * 10)
-y_max = max(step * 4, math.ceil(max_value / step) * step)
+        months.append(
+            f'''
+            <text
+                x="{x:.2f}"
+                y="286"
+                fill="#8b949e"
+                font-size="11"
+                font-family="Arial, sans-serif"
+            >
+                {MONTH_NAMES[month - 1]}
+            </text>
+            '''
+        )
 
 
-points = []
+# ─────────────────────────────────────
+# SVG
+# ─────────────────────────────────────
 
-for index, value in enumerate(values):
-    x = left + index * (chart_width / 11)
-    y = top + chart_height - (value / y_max * chart_height)
-    points.append((x, y))
-
-
-line_points = " ".join(
-    f"{x:.1f},{y:.1f}"
-    for x, y in points
-)
-
-area_points = (
-    f"{left},{top + chart_height} "
-    + line_points
-    + f" {left + chart_width},{top + chart_height}"
-)
-
-
-grid_lines = []
-grid_labels = []
-
-for index in range(5):
-    value = y_max * index / 4
-    y = top + chart_height - index * chart_height / 4
-
-    grid_lines.append(
-        f'<line x1="{left}" y1="{y:.1f}" '
-        f'x2="{left + chart_width}" y2="{y:.1f}" '
-        f'stroke="#2d3f63" stroke-width="1" opacity="0.7"/>'
-    )
-
-    grid_labels.append(
-        f'<text x="{left - 15}" y="{y + 5:.1f}" '
-        f'text-anchor="end" fill="#70a5fd" '
-        f'font-size="13">{int(value)}</text>'
-    )
-
-
-month_elements = []
-point_elements = []
-
-for index, ((x, y), label, value) in enumerate(
-    zip(points, labels, values)
-):
-    month_elements.append(
-        f'<text x="{x:.1f}" y="{height - 30}" '
-        f'text-anchor="middle" fill="#70a5fd" '
-        f'font-size="14">{label}</text>'
-    )
-
-    point_elements.append(
-        f'''
-        <circle cx="{x:.1f}" cy="{y:.1f}" r="6"
-                fill="#39d353"
-                stroke="#1a1b27"
-                stroke-width="3"/>
-
-        <text x="{x:.1f}" y="{y - 14:.1f}"
-              text-anchor="middle"
-              fill="#c9d1d9"
-              font-size="12"
-              font-weight="600">{value}</text>
-        '''
-    )
-
-
-svg = f"""<svg
+svg = f"""
+<svg
     xmlns="http://www.w3.org/2000/svg"
-    width="{width}"
-    height="{height}"
-    viewBox="0 0 {width} {height}"
+    width="{WIDTH}"
+    height="{HEIGHT}"
+    viewBox="0 0 {WIDTH} {HEIGHT}"
 >
-    <defs>
-        <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#39d353" stop-opacity="0.30"/>
-            <stop offset="100%" stop-color="#39d353" stop-opacity="0.02"/>
-        </linearGradient>
 
-        <filter id="glow">
-            <feGaussianBlur stdDeviation="3" result="blur"/>
-            <feMerge>
-                <feMergeNode in="blur"/>
-                <feMergeNode in="SourceGraphic"/>
-            </feMerge>
-        </filter>
-    </defs>
+<defs>
 
-    <rect
-        width="100%"
-        height="100%"
-        rx="10"
-        fill="#1a1b27"
-    />
+    <linearGradient id="background" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#0d1117"/>
+        <stop offset="100%" stop-color="#0b120e"/>
+    </linearGradient>
 
-    <text
-        x="{width / 2}"
-        y="38"
-        text-anchor="middle"
-        fill="#70a5fd"
-        font-size="20"
-        font-weight="600"
-    >
-        Contributions — Last 12 Months
-    </text>
+    <linearGradient id="groundGlow" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#39d353" stop-opacity="0.18"/>
+        <stop offset="100%" stop-color="#39d353" stop-opacity="0"/>
+    </linearGradient>
 
-    <text
-        x="{width - 45}"
-        y="38"
-        text-anchor="end"
-        fill="#39d353"
-        font-size="14"
-    >
-        {total} contributions
-    </text>
+    <filter id="glow">
+        <feGaussianBlur stdDeviation="3" result="blur"/>
+        <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+    </filter>
 
-    {''.join(grid_lines)}
-    {''.join(grid_labels)}
+</defs>
 
-    <polygon
-        points="{area_points}"
-        fill="url(#areaGradient)"
-    />
 
-    <polyline
-        points="{line_points}"
-        fill="none"
-        stroke="#39d353"
-        stroke-width="4"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        filter="url(#glow)"
-    />
+<!-- Background -->
 
-    {''.join(point_elements)}
-    {''.join(month_elements)}
+<rect
+    width="100%"
+    height="100%"
+    rx="14"
+    fill="url(#background)"
+/>
+
+
+<!-- Header -->
+
+<text
+    x="35"
+    y="46"
+    fill="#f0f6fc"
+    font-size="19"
+    font-weight="600"
+    font-family="Arial, sans-serif"
+>
+    Contribution Meadow
+</text>
+
+
+<text
+    x="{WIDTH - 35}"
+    y="46"
+    text-anchor="end"
+    fill="#39d353"
+    font-size="13"
+    font-family="Arial, sans-serif"
+>
+    {total:,} contributions
+</text>
+
+
+<!-- subtle horizon -->
+
+<rect
+    x="0"
+    y="{GROUND_Y - 15}"
+    width="{WIDTH}"
+    height="70"
+    fill="url(#groundGlow)"
+/>
+
+
+<!-- grass -->
+
+{''.join(grass)}
+
+
+<!-- high activity glow -->
+
+{''.join(highlights)}
+
+
+<!-- Ground -->
+
+<line
+    x1="25"
+    y1="{GROUND_Y + 1}"
+    x2="{WIDTH - 25}"
+    y2="{GROUND_Y + 1}"
+    stroke="#238636"
+    stroke-width="2"
+    opacity="0.35"
+/>
+
+
+<!-- Months -->
+
+{''.join(months)}
+
+
+<!-- Footer -->
+
+<text
+    x="{WIDTH / 2}"
+    y="313"
+    text-anchor="middle"
+    fill="#484f58"
+    font-size="10"
+    font-family="Arial, sans-serif"
+>
+    GitHub activity · last year
+</text>
+
 </svg>
 """
-
 
 OUTPUT.write_text(svg, encoding="utf-8")
 
 print("Generated:", OUTPUT)
-print("Monthly contributions:", values)
-print("Total:", total)
+print("Days:", len(days))
+print("Total contributions:", total)
