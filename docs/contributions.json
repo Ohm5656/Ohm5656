@@ -3,41 +3,6 @@
   "total": 1028,
   "days": [
     {
-      "date": "2025-10-19",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-10-20",
-      "count": 30,
-      "color": "#30a14e"
-    },
-    {
-      "date": "2025-10-21",
-      "count": 30,
-      "color": "#30a14e"
-    },
-    {
-      "date": "2025-10-22",
-      "count": 10,
-      "color": "#9be9a8"
-    },
-    {
-      "date": "2025-10-23",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-10-24",
-      "count": 0,
-      "color": "#ebedf0"
-    },
-    {
-      "date": "2025-10-25",
-      "count": 3,
-      "color": "#9be9a8"
-    },
-    {
       "date": "2025-10-26",
       "count": 0,
       "color": "#ebedf0"
@@ -1856,6 +1821,11 @@
       "date": "2026-10-24",
       "count": 1,
       "color": "#9be9a8"
+    },
+    {
+      "date": "2026-10-25",
+      "count": 0,
+      "color": "#ebedf0"
     }
   ]
 }
