@@ -1,6 +1,6 @@
 {
   "username": "Ohm5656",
-  "total": 906,
+  "total": 850,
   "days": [
     {
       "date": "2025-11-23",
@@ -1824,6 +1824,11 @@
     },
     {
       "date": "2026-11-22",
+      "count": 0,
+      "color": "#ebedf0"
+    },
+    {
+      "date": "2026-11-23",
       "count": 0,
       "color": "#ebedf0"
     }
